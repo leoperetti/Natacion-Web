@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gestion de Torneos</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/miestilo.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<header>
+    <div id="subheader">
+        <div id="logotipo"><p><a href="">Natacion</a></p></div>
+            <nav>
+                <ul>
+                    <li><a href="PaginaPpal.html">Inicio</a></li>
+                    <li><a href="Ingresar.html">Ingresar</a></li>
+                    <li><a href="">Contacto</a></li>
+
+                </ul>    
+            </nav>
+    </div>
+</header>
+
+<section id="wrap">
+    <section id="wrapper">
+
+             <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                
+                <li>
+                    <a href="#">Gestion de Torneo</a>
+                    <ul><li><a href="DefinirTorneo.html">Definir Torneo</a></li>
+                        <li><a href="">Generar Reporte de Nadadores</a></li></ul>
+                </li>
+                <li>
+                    <a href="#">Pre Inscripciones</a>
+                    <ul><li><a href="">Inscribir a Carrera Individual</a></li>
+                        <li><a href="">Inscribir a Carrera Posta</a></li>
+                        <li><a href="">Generar Reporte de Carrera</a></li></ul>
+                </li>
+                <li>
+                    <a href="#">Tiempos</a>
+                    <ul>
+                    <li><a href="">Registrar Tiempos Competicion</a></li>
+                    <li><a href="">Generar Reporte Premiacion</a></li>    
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Editar</a>
+                    <ul>
+                    <li><a href="">Administrar Nadadores</a></li>
+                    <li><a href="">Administrar Torneos</a></li>   
+                    </ul>   
+                </li>
+                <li>
+                    <a href="#">Cronometristas</a>
+                    <ul>
+                        <li><a href="">Planilla Piamonte</a></li>
+                    </ul>   
+                </li>
+            </ul>
+          </div>
+    
+    <div class="row">
+           
+             <div  class="col-md-12">
+
+                <form>
+                    <label>Seleccione un Torneo con el cual trabajar:</label>
+                    <select>
+                        <option>Torneo en Piamonte 25/01/2016</option>
+                        <option>Torneo en Pellegrini 30/01/2016</option>
+                    </select>
+                    <label>El torneo que elija sera utilizado por defecto en el programa
+                        para el resto de los modulos, 
+                       puede optar por no elegir un torneo, y se deshabilitaran algunos de los modulos</label>
+                        <br>
+                        <button class="boton-pers">No elegir Torneo</button>
+                        <button class="boton-pers">Elegir Torneo</button>
+
+                </form>
+
+            </div>
+           
+        </div>
+
+    </section>
+</section>
+        
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+
+
+
+
+
+        <!-- /#page-content-wrapper -->
+
+      
+    
+
+
+
+
+
+
+
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
