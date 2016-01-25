@@ -12,10 +12,12 @@
     <title>Gestion de Torneos</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link href="css/miestilo.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/miestilo.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,10 +25,17 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<script>
+function inicia{
+	
+	document.getElementById("login").focus();
+}
+
+</script>
 
 </head>
 
-<body>
+<body onload="carga();">
 
 <header>
     <div id="subheader">
@@ -45,48 +54,13 @@
 <section id="wrap">
     <section id="wrapper">
              <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                
-                <li>
-                    <a href="#">Gestion de Torneo</a>
-                    <ul><li><a href="DefinirTorneo.html">Definir Torneo</a></li>
-                        <li><a href="">Generar Reporte de Nadadores</a></li></ul>
-                </li>
-                <li>
-                    <a href="#">Pre Inscripciones</a>
-                    <ul><li><a href="">Inscribir a Carrera Individual</a></li>
-                        <li><a href="">Inscribir a Carrera Posta</a></li>
-                        <li><a href="">Generar Reporte de Carrera</a></li></ul>
-                </li>
-                <li>
-                    <a href="#">Tiempos</a>
-                    <ul>
-                    <li><a href="">Registrar Tiempos Competicion</a></li>
-                    <li><a href="">Generar Reporte Premiacion</a></li>    
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Editar</a>
-                    <ul>
-                    <li><a href="">Administrar Nadadores</a></li>
-                    <li><a href="">Administrar Torneos</a></li>   
-                    </ul>   
-                </li>
-                <li>
-                    <a href="#">Cronometristas</a>
-                    <ul>
-                        <li><a href="">Planilla Piamonte</a></li>
-                    </ul>   
-                </li>
-            </ul>
-        </div>
+       
     
 <section class="container">
     <div >
       <h1>Ingresar al Sistema de Gestion de Torneos</h1>
-      <form method="post" action="index.html">
-        <p><input type="text" name="login" value="" placeholder="Usuario"></p>
+      <form method="post" action="ingresar.html">
+        <p><input type="text" name="login" id="login" value="" placeholder="Usuario"></p>
         <p><input type="password" name="password" value="" placeholder="Password"></p>
         <p class="remember_me">
           <label>
@@ -97,9 +71,8 @@
         <p class="submit"><input type="submit" name="commit" value="Login"></p>
       </form>
     </div>
-
+ </section>
     
-  </section>
     </section>  
 </section>
 
