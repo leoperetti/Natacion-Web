@@ -30,7 +30,7 @@ public class UtilidadesEscritorio
 
 	private static ControladorNatacion cc = new ControladorNatacion();
 	
-	public static void validarValoresNumericos(JTextField texto, JLabel lblError)
+	public static void validarValoresNumericos( final JTextField texto, final JLabel lblError)
 	{
 		texto.addKeyListener(new KeyAdapter() 
 		{

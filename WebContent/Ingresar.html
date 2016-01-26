@@ -13,11 +13,11 @@
 
     <!-- Bootstrap Core CSS -->
    
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
 
-    <link rel="stylesheet" href="css/miestilo.css">
+    <link href="css/miestilo.css" rel="stylesheet" >
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,12 +25,38 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-<script>
-function inicia{
-	
-	document.getElementById("login").focus();
-}
 
+<script type="text/javascript" lang="JavaScript">
+function validarDatos(){
+	var usuario = document.getElementById("login");
+	var pass = document.getElementById("password");
+	if((usuario.value == "" || usuario.value == '' || usuario.value == null || usuario.value == "Usuario") && (pass.value == "" || pass.value == '' || pass.value == null || pass.value == "Password"))
+	{
+		alert("Ingrese su usuario y password");
+		usuario.focus();
+		return false;
+	} 
+	else if(usuario.value == "" || usuario.value == '' || usuario.value == null || usuario.value == "Usuario")
+	{
+		alert("Ingrese su usuario");
+		usuario.focus();
+		return false;
+	}
+	else if(pass.value == "" || pass.value == '' || pass.value == null || pass.value == "Password")
+	{
+		alert("Ingrese su password");
+		pass.focus();
+		return false;
+	}
+	else 
+	{
+		return true;
+	}
+	
+					}
+function carga(){
+	document.getElementById("login").focus();
+				}
 </script>
 
 </head>
@@ -56,21 +82,21 @@ function inicia{
              <!-- Sidebar -->
        
     
-<section class="container">
-    <div >
+<section>
+    
       <h1>Ingresar al Sistema de Gestion de Torneos</h1>
-      <form method="post" action="ingresar.html">
-        <p><input type="text" name="login" id="login" value="" placeholder="Usuario"></p>
-        <p><input type="password" name="password" value="" placeholder="Password"></p>
+      <form action="Ingresar.html" method="POST" onsubmit="return validarDatos();">
+        <p><input type="text" name="login" id="login" placeholder="Usuario"></p>
+        <p><input type="password" name="password" id="password" placeholder="Password"></p>
         <p class="remember_me">
           <label>
             <input type="checkbox" name="remember_me" id="remember_me">
             Recordar usuario
           </label>
         </p>
-        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+        <p><input type="submit" value="Login"></p>
       </form>
-    </div>
+   
  </section>
     
     </section>  

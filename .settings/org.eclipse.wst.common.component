@@ -2,6 +2,7 @@
     <wb-module deploy-name="NATACIONWEB">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/DataBase"/>
         <property name="context-root" value="NATACIONWEB"/>
         <property name="java-output-path" value="/NATACIONWEB/build/classes"/>
     </wb-module>

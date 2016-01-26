@@ -48,28 +48,28 @@ public class Aasdas extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JCheckBox checkBox = new JCheckBox("New check box");
+		final JCheckBox checkBox = new JCheckBox("New check box");
 		checkBox.setBounds(53, 52, 104, 50);
 		contentPane.add(checkBox);
 		
-		JCheckBox checkBox_1 = new JCheckBox("New check box");
+		final JCheckBox checkBox_1 = new JCheckBox("New check box");
 		checkBox_1.setBounds(53, 108, 104, 50);
 		contentPane.add(checkBox_1);
 		
 		
 		
-		JComboBox comboBox = new JComboBox();
+		final JComboBox comboBox = new JComboBox();
 		comboBox.setModel(UtilidadesEscritorio.generarModeloComboBox(ControladorNatacion.getInstance().getDescalificaciones()));
 		comboBox.setBounds(224, 52, 200, 50);
 		contentPane.add(comboBox);
 		
-		JComboBox comboBox_1 = new JComboBox();
+		final JComboBox comboBox_1 = new JComboBox();
 		comboBox_1.setBounds(224, 124, 200, 50);
 		comboBox_1.setModel(UtilidadesEscritorio.generarModeloComboBox(ControladorNatacion.getInstance().getDescalificaciones()));
 		contentPane.add(comboBox_1);
 		
 		
-		String[] asd = new String[2];
+		final String[] asd = new String[2];
 		
 		JButton btnConfirmar = new JButton("Confirmar");
 		btnConfirmar.addMouseListener(new MouseAdapter() {

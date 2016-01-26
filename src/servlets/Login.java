@@ -1,16 +1,24 @@
 package servlets;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.ParseException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import entidades.Usuario;
+import negocio.ControladorNatacion;
 
 /**
  * Servlet implementation class Login
  */
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private ControladorNatacion cn = new ControladorNatacion();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -33,16 +41,24 @@ public class Login extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String usuario = request.getParameter("login");
 		String password = request.getParameter("password");
-		if(usuario.equals("Leonardo") && password.equals("123peretto"))
-		{
-			request.setAttribute("usuariologueado", usuario+" "+password);
-			request.getRequestDispatcher("bienvenido.jsp").forward(request, response);
+		
+		
+		try {
+			boolean ingreso = cn.buscarUsuario(usuario, password);
+			if(!ingreso)
+			{
+				//inicializo la sesion
+				HttpSession session = request.getSession(true);
+				session.setAttribute("existeUsuario", ingreso);
+				request.getRequestDispatcher("usuarios.jsp").forward(request, response);
+			}
+			else
+			{
+				response.sendRedirect("Ingresar.html");
+			}
+		} catch (ParseException e) {
 			
-			
-		}
-		else
-		{
-			response.sendRedirect("Ingresar.html");
+			e.printStackTrace();
 		}
 	}
 

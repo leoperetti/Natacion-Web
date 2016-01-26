@@ -1,5 +1,6 @@
 package negocio;
 
+import java.text.ParseException;
 import java.util.ArrayList;
 
 import javax.swing.table.TableModel;
@@ -26,6 +27,7 @@ public class ControladorNatacion
 		private CatalogoTorneos ct = new CatalogoTorneos();
 		private CatalogoCarreras cca = new CatalogoCarreras();
 		private CatalogoPreInscripcion cpi = new CatalogoPreInscripcion();
+		private CatalogoUsuario cu = new CatalogoUsuario();
 		private  Torneo torneoActual = null;
 		private static ControladorNatacion instancia = null;
 		
@@ -527,8 +529,13 @@ public class ControladorNatacion
 				
 				return CatalogoPreInscripcion.getInstance().buscarMuchosNadadoresPorNombreYApellidoPosta(carreraSeleccionada, text, nroTorneo);
 			}
-		
 			
+		
+//USUARIOS
+			public boolean buscarUsuario(String usuario, String password) throws ParseException{
+				
+				return cu.buscarUsuario(usuario, password);
+			}
 
 
 

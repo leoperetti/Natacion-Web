@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="DataBase"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
@@ -10,5 +11,25 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0"/>
 	<classpathentry exported="true" kind="lib" path="C:/workspace/NATACION/bin/resources/sqlite-jdbc-3.8.11.2.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/commons-beanutils-1.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/commons-javaflow-20060411.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/itext-2.1.7.js4.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/jasperreports-6.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/jasperreports-fonts-6.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/jasperreports-javaflow-6.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/jxl-2.6.10.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/poi-3.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/poi-ooxml-3.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/poi-ooxml-schemas-3.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/xml-apis.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/xml-apis-ext.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/xmlbeans-2.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/workspace/NATACION/bin/resources/xmpcore-5.1.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

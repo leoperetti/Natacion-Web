@@ -5,10 +5,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<script type="text/javascript">
+boolean existe = <%= session.getAttribute("existeUsuario") %>;
+if(!existe){
+	alert("Error en el logueo")
+}
+else
+{
+	alert("Has sido logueado correctamente")
+}
+
+</script>
 </head>
 <body>
-<p>
-Bienvenido, has sido logueado: <%= request.getAttribute("usuariologueado") %>
-</p>
+
 </body>
 </html>
