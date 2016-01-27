@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Gestion de Torneos</title>
+    <title>PreInscripcion a Carrera Individual</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -48,7 +48,7 @@
 
              <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+           <ul class="sidebar-nav">
                 
                 <li>
                     <a>Gestion de Torneo</a>
@@ -89,17 +89,29 @@
              <div  class="col-md-12">
 
                 <form>
-                    <label>Seleccione un Torneo con el cual trabajar:</label>
-                    <select>
-                        <option>Torneo en Piamonte 25/01/2016</option>
-                        <option>Torneo en Pellegrini 30/01/2016</option>
-                    </select>
-                    <label>El torneo que elija sera utilizado por defecto en el programa
-                        para el resto de los modulos, 
-                       puede optar por no elegir un torneo, y se deshabilitaran algunos de los modulos</label>
+                    <label>Torneo: </label> <select><option>torneo1</option></select> <button class="boton-pers">Cambiar Torneo</button> <br>
+                    <label>Carrera: </label><select><option>Carrera1</option></select><br>
+                    <br>
+                    <div class="col-md-5">
+                        <h3>Nadadores no Inscriptos</h1><br>
+                        <select multiple>
+                            <option>Juan Perez</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="boton-pers">Agregar</button><br>
+                        <button class="boton-pers">Quitar</button><br>
                         <br>
-                        <button class="boton-pers">No elegir Torneo</button>
-                        <button class="boton-pers">Elegir Torneo</button>
+                        <br>
+                        <br>
+                        <button class="boton-pers">Generar Series</button>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Nadadores Inscriptos</h1><br>
+                        <select multiple>
+                            <option>Pepito</option>
+                        </select>
+                    </div>
 
                 </form>
 
